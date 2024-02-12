@@ -1,10 +1,15 @@
 <template>
   <div>
-
+    <DestCard 
+    v-for = "game in games" 
+    :key = "game.name"
+    :Game = "game"
+    />
   </div>
 </template>
 
 <script setup>
+import DestCard from '@/components/DestCard.vue';
 const games = [
   {
     name: "Monolopy",
@@ -14,7 +19,7 @@ const games = [
   {
     name: "Guess Who?",
     price: "$16",
-    img: "https://m.media-amazon.com/images/I/61R9bZbcZWL._AC_SX679_.jpg",
+    img: "https://m.media-amazon.com/images/I/81LN0nlRQML._AC_SX679_.jpg",
   },
   {
     name: "Sorry!",
@@ -23,33 +28,33 @@ const games = [
   },
   {
     name: "Trouble",
-    price: "",
-    img: "",
+    price: "$13.62",
+    img: "https://m.media-amazon.com/images/I/81ofxH9uLrL._AC_SX679_.jpg",
   },
   {
     name: "Battleship",
-    price: "",
-    img: "",
+    price: "$17",
+    img: "https://m.media-amazon.com/images/I/71GcJTrP0HL._AC_UF894,1000_QL80_.jpg",
   },
   {
     name: "The Game of Life",
-    price: "",
-    img: "",
+    price: "$20",
+    img: "https://dmzn2b8hkpq8b.cloudfront.net/images/products/515x515/S304518_1.jpg",
   },
   {
     name: "Connect Four",
-    price: "",
-    img: "",
+    price: "$12",
+    img: "https://m.media-amazon.com/images/I/71FGqk1RfVL._AC_SX679_.jpg",
   },
   {
-    name: "Exploding Kittens",
-    price: "",
-    img: "",
+    name: "Clue",
+    price: "$22",
+    img: "https://m.media-amazon.com/images/I/81x-QjeZrDL._AC_SX679_.jpg",
   },
   {
-    name: "Poetry for Neanderthals",
-    price: "",
-    img: "",
+    name: "Sequence",
+    price: "$15",
+    img: "https://m.media-amazon.com/images/I/81FKvz4ijFL._AC_SX679_.jpg",
   },
 ]  
 </script>
