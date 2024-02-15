@@ -60,28 +60,4 @@ const games = [
 </script>
 
 <style scoped>
-:root {
-  --blue:#b6ccfe;
-  --lightblue: #ccdbfd;
-  --darkblue: #abc4ff;
-  --anotherblue: #c1d3fe;
-  --primary:  var(--blue);
-  --secondary: var(--lightblue);
-  --tertiary: var(--darkblue);
-  --quaternary: var(--anotherblue);
-
-}
-
-body,
-html,
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-  background-color: var(--primary);
-  text-align: center;
-}
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="card">
         <h2>{{ Game.name }}</h2>
         <h2>{{ Game.price }}</h2>
     <img :src = "Game.img" alt="" />
