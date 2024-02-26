@@ -8,6 +8,10 @@
     :Game = "game"
     />
   </div>
+
+  <div class="cart">
+      <h2>Shopping Cart</h2>
+    </div>
 </template>
 
 <script setup>
@@ -74,22 +78,14 @@ h1 {
 display: flex;
 flex-wrap: wrap;
 width: 92vw;
-margin: 1rem auto;
+margin: 1rem 2rem;
 align-items: center;
-justify-content: center;
+justify-content: left;
+box-sizing: border-box;
 }
 
-.card {
-  width: 22%;
-  background-color: var(--secondary);
+.cart {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 1rem;
-  margin: 25px 25px;
-  box-shadow: 1rem 1rem 0.5rem var(--tertiary);
-  transition: all 0.3s ease-in-out;
-  padding-bottom: 40px;
+  flex:50%;
 }
 </style>
