@@ -81,7 +81,6 @@ width: 92vw;
 margin: 1rem 2rem;
 align-items: center;
 justify-content: left;
-box-sizing: border-box;
 }
 
 .cart {
