@@ -13,7 +13,7 @@ body {
   text-align: center;
 }
 
-.display {
+/* .display {
 display: flex;
 flex-wrap: wrap;
 width: 92vw;
@@ -34,7 +34,7 @@ justify-content: center;
   box-shadow: 1rem 1rem 0.5rem var(--tertiary);
   transition: all 0.3s ease-in-out;
   padding-bottom: 40px;
-}
+} */
 
 /* .heading {
   font-family: 'Hind', sans-serif;

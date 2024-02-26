@@ -1,5 +1,7 @@
 <template>
-  <div>
+<h1>Board Games</h1>
+
+  <div class="display">
     <DestCard 
     v-for = "game in games" 
     :key = "game.name"
@@ -60,4 +62,34 @@ const games = [
 </script>
 
 <style scoped>
+h1 {
+  font-family: 'Hind', sans-serif;
+  background-color: var(--secondary);
+  margin: 4rem 35rem 1.5rem;
+  border-radius: 1rem;
+  font-size:3rem;
+}
+
+.display {
+display: flex;
+flex-wrap: wrap;
+width: 92vw;
+margin: 1rem auto;
+align-items: center;
+justify-content: center;
+}
+
+.card {
+  width: 22%;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+  margin: 25px 25px;
+  box-shadow: 1rem 1rem 0.5rem var(--tertiary);
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 40px;
+}
 </style>
