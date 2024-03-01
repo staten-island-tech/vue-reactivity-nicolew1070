@@ -21,7 +21,7 @@ function addtoCart () {
 img {
 width: 50%;
 height: 10rem;
-margin-top: 2rem;
+margin-top: 1.5rem;
 }
 .gamecard {
   width: 25%;
