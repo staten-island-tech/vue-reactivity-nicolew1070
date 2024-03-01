@@ -84,7 +84,13 @@ justify-content: left;
 }
 
 .cart {
-  display: flex;
-  flex:50%;
+  height: 95%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--secondary);
+  padding-top: 20px;
+  margin-top: 2rem;
 }
 </style>
