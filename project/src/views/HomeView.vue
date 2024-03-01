@@ -92,5 +92,6 @@ justify-content: left;
   background-color: var(--secondary);
   padding-top: 20px;
   margin-top: 2rem;
+  overflow-y: scroll;
 }
 </style>

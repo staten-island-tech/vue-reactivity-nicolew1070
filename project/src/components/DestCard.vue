@@ -3,7 +3,7 @@
         <h2>{{ Game.name }}</h2>
         <h2>{{ Game.price }}</h2>
     <img :src = "Game.img" alt="" />
-    <button @click = "addtoCart">Add to Cart</button>
+    <button @click = "addtoCart" class="btn">Add to Cart</button>
     </div>
 </template>
 
@@ -21,6 +21,7 @@ function addtoCart () {
 img {
 width: 50%;
 height: 10rem;
+margin-top: 2rem;
 }
 .gamecard {
   width: 25%;
@@ -33,5 +34,10 @@ height: 10rem;
   margin: 25px 25px;
   box-shadow: 1rem 1rem 0.5rem var(--tertiary);
   padding-bottom: 40px;
+}
+
+.btn {
+   margin-top: 2rem;
+   background-color: var(--tertiary);
 }
 </style>
