@@ -13,6 +13,7 @@
   <div class="addToCart">
       <h2>Shopping Cart</h2>
       <h3>Items in Cart: {{ store.count }}</h3>
+      <h3>Total Price: {{ store.price }}</h3>
     </div>
 </template>
 

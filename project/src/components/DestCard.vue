@@ -15,7 +15,7 @@ const props = defineProps({
 });
 
 function addToCart() {
-    store.cart.push(item)
+    store.cart.push(Game) 
 };
 
 </script>
