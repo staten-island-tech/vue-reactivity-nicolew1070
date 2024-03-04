@@ -3,18 +3,21 @@
         <h2>{{ Game.name }}</h2>
         <h2>{{ Game.price }}</h2>
     <img :src = "Game.img" alt="" />
-    <button @click = "addtoCart" class="btn">Add to Cart</button>
+    <button @click = "addToCart" class="btn">Add to Cart</button>
     </div>
 </template>
 
 <script setup>
+import { store } from '@/stores/store';
+
 const props = defineProps({
     Game: Object,
 });
 
-function addtoCart () {
+function addToCart() {
+    store.cart.push(item)
+};
 
-}
 </script>
 
 <style scoped>
@@ -37,7 +40,10 @@ margin-top: 1.5rem;
 }
 
 .btn {
-   margin-top: 2rem;
-   background-color: var(--tertiary);
+  background-color: var(--tertiary);
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  margin: 1rem auto;
+  border: solid var(--primary);
 }
 </style>

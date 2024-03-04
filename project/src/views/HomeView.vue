@@ -6,19 +6,22 @@
     v-for = "game in games" 
     :key = "game.name"
     :Game = "game"
+    @addtoCart = "addToCart(game)"
     />
   </div>
 
-  <div class="cart">
+  <div class="addToCart">
       <h2>Shopping Cart</h2>
+      <h3>Items in Cart: {{ store.count }}</h3>
     </div>
 </template>
 
 <script setup>
+import {store} from '../stores/store';
 import DestCard from '@/components/DestCard.vue';
 const games = [
   {
-    name: "Monolopy",
+    name: "Monopoly",
     price: "$20",
     img: "https://m.media-amazon.com/images/I/812z45q0jYL._AC_SX679_.jpg",
   },
@@ -62,7 +65,7 @@ const games = [
     price: "$15",
     img: "https://m.media-amazon.com/images/I/81FKvz4ijFL._AC_SX679_.jpg",
   },
-]  
+]
 </script>
 
 <style scoped>
@@ -83,7 +86,7 @@ align-items: center;
 justify-content: left;
 }
 
-.cart {
+.addToCart {
   height: 95%;
   width: 300px;
   position: fixed;
@@ -93,5 +96,9 @@ justify-content: left;
   padding-top: 20px;
   margin-top: 2rem;
   overflow-y: scroll;
+}
+
+h3 {
+  margin: 1rem;
 }
 </style>
