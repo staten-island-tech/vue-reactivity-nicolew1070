@@ -8,18 +8,13 @@
     </template>
 
     <script setup>
-import { store } from '@/views/store';
-
     const props = defineProps({
         Game: Object,
         cart: Array,    
     });
+    
 
-    methods: {
-        addToCart() {
-            store.cart.push({name: this.game.name, price: this.game.price})
-        }
-    }
+
     </script>
 
     <style scoped>

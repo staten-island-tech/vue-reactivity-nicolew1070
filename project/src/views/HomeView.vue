@@ -6,7 +6,6 @@
     v-for = "game in games" 
     :key = "game.name"
     :Game = "game"
-    @addtoCart = "addToCart(game)"
     />
   </div>
 
@@ -21,9 +20,6 @@
 import {store} from '../views/store';
 import DestCard from '@/components/DestCard.vue';
 
-const addToCart = (game)=> {
-  store.cart.push(game);
-}
 const games = [
   {
     name: "Monopoly",
@@ -71,6 +67,7 @@ const games = [
     img: "https://m.media-amazon.com/images/I/81FKvz4ijFL._AC_SX679_.jpg",
   },
 ]
+
 </script>
 
 <style scoped>
