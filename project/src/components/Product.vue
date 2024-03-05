@@ -5,6 +5,12 @@
         <img :src = "Game.img" alt="" />
         <button @click = "price++, count++, addToCart()" class="btn">Add to Cart</button>
         </div>
+
+        <div class="addToCart">
+      <h2>Shopping Cart</h2>
+      <h3>Items in Cart: {{ store.count }}</h3>
+      <h3>Total Price: {{ store.price }}</h3>
+    </div>
     </template>
 
     <script setup>
@@ -13,7 +19,6 @@
         cart: Array,    
     });
     
-
 
     </script>
 

@@ -2,7 +2,7 @@
 <h1>Board Games</h1>
 
   <div class="display">
-    <DestCard
+    <Product
     v-for = "game in games" 
     :key = "game.name"
     :Game = "game"
@@ -10,15 +10,14 @@
   </div>
 
   <div class="addToCart">
-      <h2>Shopping Cart</h2>
-      <h3>Items in Cart: {{ store.count }}</h3>
-      <h3>Total Price: {{ store.price }}</h3>
+      <Shopping
+      />
     </div>
 </template>
 
 <script setup>
 import {store} from '../views/store';
-import DestCard from '@/components/DestCard.vue';
+import Product from '@/components/Product.vue';
 
 const games = [
   {
