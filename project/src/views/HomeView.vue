@@ -2,7 +2,7 @@
 <h1>Board Games</h1>
 
   <div class="display">
-    <DestCard 
+    <DestCard
     v-for = "game in games" 
     :key = "game.name"
     :Game = "game"
@@ -18,8 +18,12 @@
 </template>
 
 <script setup>
-import {store} from '../stores/store';
+import {store} from '../views/store';
 import DestCard from '@/components/DestCard.vue';
+
+const addToCart = (game)=> {
+  store.cart.push(game);
+}
 const games = [
   {
     name: "Monopoly",
