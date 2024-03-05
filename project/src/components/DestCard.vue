@@ -3,7 +3,7 @@
         <h2>{{ Game.name }}</h2>
         <h2>{{ Game.price }}</h2>
     <img :src = "Game.img" alt="" />
-    <button @click = "addToCart" class="btn">Add to Cart</button>
+    <button @click = "price++, count++, addToCart()" class="btn">Add to Cart</button>
     </div>
 </template>
 
@@ -12,10 +12,11 @@ import { store } from '@/stores/store';
 
 const props = defineProps({
     Game: Object,
+    cart: Array,
 });
 
 function addToCart() {
-    store.cart.push(item)
+    store.cart.push({name: this.Game.name, price: this.Game.price})
 };
 
 </script>
