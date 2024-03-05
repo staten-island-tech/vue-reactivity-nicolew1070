@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="btn" @click="increment(), total()">Add to Cart</button>
+        <button class="btn" @click="/* increment(),  */total()">Add to Cart</button>
     </div>
 </template>
 
@@ -13,13 +13,10 @@ export default {
     game: Object,
     cart: Array,
   },
-  components: {
-  }, 
   methods: {
-    increment() {
+    /* increment() {
         store.count++
-        if (item > store.count)
-    },
+    }, */
     total() {
         store.cart.push(this.game)
         console.log(store.cart)

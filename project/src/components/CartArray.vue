@@ -27,15 +27,12 @@ export default {
 
 <style scoped>
 .item {
-  width: 25%;
-  background-color: var(--secondary);
-  display: flex;
+  background-color: var(--tertiary);
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   border-radius: 1rem;
   margin: 25px 25px;
-  box-shadow: 1rem 1rem 0.5rem var(--tertiary);
   padding-bottom: 40px;
   }
 

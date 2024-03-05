@@ -11,7 +11,7 @@
   
     <div class="addToCart">
         <h2>Shopping Cart</h2>
-        <h3>Items in Cart: {{ store.count }}</h3>
+        <!-- <h3>Items in Cart: {{ store.count }}</h3> -->
         <CartArray 
         v-for = "item in store.cart"
         :key = "index"
